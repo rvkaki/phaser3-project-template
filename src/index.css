@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  scrollbar-width: thin;
+  /* thumb-color track-color */
+  scrollbar-color: rgb(49, 61, 73) rgb(16, 22, 28);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(16, 22, 28);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(49, 61, 73);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(56, 68, 83);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: #14141f;
+  font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container {
+  width: 850px;
+  height: 580px;
+  outline: 3px solid #00ff00;
+}
+
+canvas {
+  display: block;
+}
